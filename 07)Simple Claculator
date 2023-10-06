@@ -1,0 +1,46 @@
+import java.util.Scanner;
+class Claci
+{
+    public static void main(String args[])
+    {
+        Scanner reader=new Scanner(System.in);
+        System.out.println("1.Addition");
+        System.out.println("2.Subtraction");
+        System.out.println("3.Multiplication");
+        System.out.println("4.Division");
+        System.out.println("Enter the choice to be operate:");
+        int n=reader.nextInt();
+        if(n>=1 && n<=4)
+        {
+        System.out.println("Enter the 1st number:");
+        int a=reader.nextInt();
+        System.out.println("Enter the 2nd number:");
+        int b=reader.nextInt();
+        if(n==1)
+        {
+         n=a+b;
+         System.out.println(n);
+        }
+        else if(n==2)
+        {
+            n=a-b;
+            System.out.println(n);
+        }
+                else if(n==3)
+                {
+                    n=a*b;
+                    System.out.println(n);
+                }
+                else
+                {
+                    n=a / b;
+                    System.out.println(n);
+                }
+        }
+                else
+                {
+                    System.out.println("Invalid");
+                }
+                }
+                }
+        
